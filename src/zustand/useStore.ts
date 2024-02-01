@@ -1,4 +1,4 @@
-import createSelectors from './store/createSelectors';
+import createSelectors from './createSelectors';
 import useCombinedStore from './store';
 
 const useStore = () => createSelectors(useCombinedStore);
