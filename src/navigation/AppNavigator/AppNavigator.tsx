@@ -1,7 +1,7 @@
 import { createStackNavigator } from '@react-navigation/stack';
 
 import { ScreenName } from '../screens';
-import TabNavigator from '../TabNavigator';
+import TabNavigator from '../TabNavigator/TabNavigator';
 import { AppStackParamList } from './types';
 
 const Stack = createStackNavigator<AppStackParamList>();

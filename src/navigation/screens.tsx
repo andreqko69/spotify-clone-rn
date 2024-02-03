@@ -6,6 +6,7 @@ export enum ScreenName {
   Search = 'Search',
   Library = 'Library',
   AuthNavigator = 'AuthNavigator',
+  AppNavigator = 'AppNavigator',
   TabNavigator = 'TabNavigator',
   HomeNavigator = 'HomeNavigator',
   LibraryNavigator = 'LibraryNavigator',
