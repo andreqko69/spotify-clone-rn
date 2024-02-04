@@ -1,11 +1,13 @@
 import React from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
+import { View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import type { StackNavigationProp } from '@react-navigation/stack';
 import { useNavigation } from '@react-navigation/native';
 
 import useStore from '../../../zustand/useStore';
 import { ScreenName } from '../../../navigation/screens';
 import { AuthStackParamList } from '../../../navigation/AuthNavigator/AuthNavigator.types';
+import OutlinedButton from '../../../components/OutlinedButton/OutlinedButton';
 
 type Props = StackNavigationProp<AuthStackParamList, ScreenName.Login>;
 
@@ -20,15 +22,11 @@ const LoginScreen = () => {
   };
 
   return (
-    <View>
-      <Text>Login</Text>
-      <TouchableOpacity onPress={() => setIsAuthenticated(true)}>
-        <Text>Execute login</Text>
-      </TouchableOpacity>
-      <TouchableOpacity onPress={redirectToSignup}>
-        <Text>Signup</Text>
-      </TouchableOpacity>
-    </View>
+    <SafeAreaView>
+      <View>
+        <OutlinedButton text="Log in" onPress={() => console.log('hello')} />
+      </View>
+    </SafeAreaView>
   );
 };
 

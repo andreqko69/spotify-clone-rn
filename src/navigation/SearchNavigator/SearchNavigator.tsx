@@ -6,7 +6,11 @@ import SearchScreen from '../../screens/App/Search/SearchScreen';
 const Stack = createStackNavigator();
 
 const SearchNavigator = () => (
-  <Stack.Navigator>
+  <Stack.Navigator
+    screenOptions={{
+      headerShown: false,
+    }}
+  >
     <Stack.Screen name={ScreenName.Search} component={SearchScreen} />
   </Stack.Navigator>
 );

@@ -6,7 +6,11 @@ import LibraryScreen from '../../screens/App/Library/LibraryScreen';
 const Stack = createStackNavigator();
 
 const LibraryNavigator = () => (
-  <Stack.Navigator>
+  <Stack.Navigator
+    screenOptions={{
+      headerShown: false,
+    }}
+  >
     <Stack.Screen name={ScreenName.Library} component={LibraryScreen} />
   </Stack.Navigator>
 );

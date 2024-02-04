@@ -8,7 +8,12 @@ import LibraryNavigator from '../LibraryNavigator/LibraryNavigator';
 const Tab = createBottomTabNavigator();
 
 const TabNavigator = () => (
-  <Tab.Navigator initialRouteName={ScreenName.HomeNavigator}>
+  <Tab.Navigator
+    initialRouteName={ScreenName.HomeNavigator}
+    screenOptions={{
+      headerShown: false,
+    }}
+  >
     <Tab.Screen name={ScreenName.HomeNavigator} component={HomeNavigator} />
     <Tab.Screen name={ScreenName.SearchNavigator} component={SearchNavigator} />
     <Tab.Screen

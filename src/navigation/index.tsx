@@ -14,7 +14,11 @@ const RootNavigator = () => {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{ header: null }}>
+      <Stack.Navigator
+        screenOptions={{
+          headerShown: false,
+        }}
+      >
         {isAuthenticated ? (
           <Stack.Screen
             name={ScreenName.AppNavigator}

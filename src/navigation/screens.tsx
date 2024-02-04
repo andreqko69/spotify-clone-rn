@@ -1,4 +1,5 @@
 export enum ScreenName {
+  Welcome = 'Welcome',
   Login = 'Login',
   Signup = 'Signup',
   App = 'App',

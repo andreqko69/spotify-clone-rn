@@ -2,14 +2,14 @@ import React from 'react';
 import { Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-const LibraryScreen = () => {
+const HomeScreen = () => {
   return (
     <SafeAreaView>
       <View>
-        <Text>Library</Text>
+        <Text>Home</Text>
       </View>
     </SafeAreaView>
   );
 };
 
-export default LibraryScreen;
+export default HomeScreen;

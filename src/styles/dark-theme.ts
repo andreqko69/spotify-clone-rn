@@ -1,3 +1,5 @@
+import baseTheme from './base-theme';
+
 const darkTheme = {
   colors: {
     typography: {
@@ -10,6 +12,7 @@ const darkTheme = {
       secondary: '#535353',
     },
   },
+  ...baseTheme,
 } as const;
 
 export default darkTheme;
